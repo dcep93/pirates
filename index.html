@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Pirates and Gold</title>
+<link rel="icon" 
+      type="image/png" 
+      href="http://s3.amazonaws.com/rapgenius/filepicker%2FFNd8hFpScuf26lD0VYXe_capital_d.jpg">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+body{
+	margin:50;
+}
+table{
+	margin:30px;
+}
+td{
+	width:40px;
+}
+button{
+	margin-left:10px;
+	height:24px;
+	width:150px;
+}
+</style>
+</head>
+<body>
+<div>
+	<h1>Pirates and Gold</h1>
+	<h2>Rules:</h2>
+	<p>The n pirates stand in a known order. The first pirate suggests a distribution of the k gold between the group of pirates. After declaring the distribution, the n pirates vote. If more than half of the pirates vote yes, the suggested distribution passes. Otherwise, that pirate is executed and we recurse to n-1 pirates, still distributing k gold. Pirates have the following preferences:</p>
+	<ul>
+		<li>Pirates want to live.</li>
+		<li>Pirates want maximum gold.</li>
+		<li>Pirates like killing other pirates.</li>
+	</ul>
+	<p>You are the first pirate. Enter your suggested distribution for the following n and k.
+</div>
+<form onsubmit="checkAnswer();return false;" id="form">
+<table>
+	<tr>
+		<td>n =</td>
+		<td><input id="n" type="text" value="5"></td>
+	</tr>
+	<tr>
+		<td>k =</td>
+		<td><input id="k" type="text" value="100"></td>
+	</tr>
+	<tr>
+		<td>input</td>
+		<td><input id="raw_input" type="text" placeholder="first pirate to last pirate"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><button>Check Answer</button></td>
+	</tr>
+	<tr>
+		<td colspan="2" id="result"></td>
+	</tr>
+</table>
+</form>
+</body>
+<script src="pirates.js"></script>
+</html>
