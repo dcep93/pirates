@@ -1,0 +1,14 @@
+body{
+	margin:50;
+}
+table{
+	margin:30px;
+}
+td{
+	width:40px;
+}
+button{
+	margin-left:10px;
+	height:24px;
+	width:150px;
+}
